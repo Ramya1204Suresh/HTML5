@@ -1,0 +1,43 @@
+<html>
+<head>
+<Title>HTML 5 page </Title>
+</head>
+<body>
+<H1>Welcome to My First HTML page</H1>
+<div>
+<h3>Video</h3>
+<video id="myvideo" width=300  controls loop muted>
+<source src="SampleVideo_1280x720_1mb.mp4" type="">
+    
+</source>
+</video>
+<br>
+<span style="color:red">
+<button id="playid" onclick="videoplay()">Play</button>
+<button id="pauseid" onclick="videopause()" disabled>Pause</button>
+</span>
+</div>
+<hr>
+<hr>
+<h2>Youtube</h2>
+<iframe src="https://www.youtube.com/embed/IFncZA5k_1k" width="300" height="300"></iframe>
+<script>
+    var videoref = document.getElementById("myvideo")
+    var playref= document.getElementById("playid")
+    var pauseref= document.getElementById("pauseid")
+    var videoplay=function(){
+    
+    videoref.play()
+    playref.disabled = true
+    pauseref.disabled = false
+    }
+
+    function videopause(){
+   
+    videoref.pause()
+    pauseref.disabled = true
+    playref.disabled = false
+    }
+</script>
+</body>
+</html>

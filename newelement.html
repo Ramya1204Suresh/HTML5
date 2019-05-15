@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>
+            New HTML5 Elements
+        </title>
+        <link rel="stylesheet" href="css/form.css"
+    </head>
+    <body color="aqua" onload="setDefaultValues()">
+        <h2>My Sample Form</h2>
+        <form id="myform">
+         <fieldset>
+             <legend>
+                 Personal Details
+             </legend>
+             <div >
+                 <label >Name</label>
+                 <br>
+                 <input type="text" autofocus required pattern="[a-zA-Z]+\s)*{4,65}" size="50">
+             </div>
+             <br>
+             <div>
+                    <label >Date of Birth</label>
+                    <br>
+                    <input type="date" min="2019-05-05" step="7" size="50" id="todayDate">
+             </div>
+             <br>
+             <div>
+                    <label >Age</label>
+                    <br>
+                    <input type="number" min="10" max="100" step="10" size="50">
+             </div>
+             <br>
+         </fieldset>
+         <fieldset>
+                <legend>
+                    Professional Details
+                </legend>
+                <div>
+                        <label >Email</label>
+                        <br>
+                        <input type="email" size="50">
+                 </div>
+                 <br>
+                 <div>
+                        <label >Website</label>
+                        <br>
+                        <input type="url" size="50" >
+                 </div>
+                 <br>
+                 <div>
+                        <label >How was the session</label>
+                        <br>
+                        <input type="range" size="50" list="scores" >
+                        <datalist id="scores">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="40">40</option>
+                                <option value="60">60</option>
+                                <option value="80">80</option>
+                                <option value="95">95</option>
+                                <option value="100">100</option>
+           
+                            </datalist>
+                 </div>
+                 <br>
+                 <div>
+                     <input type="color">
+                 </div>
+                 <br>
+                 <progress min="0" max="100" value="25"></progress>
+                 <br>
+                 <label>Select your location</label>
+                 <br>
+                 <input type="text" size="50" list="citynames">
+                 <datalist id="citynames">
+                     <option value="chennai">Chennai</option>
+                     <option value="madurai">Madurai</option>
+                     <option value="mangalore">Mangalore</option>
+                     <option value="bengaluru">Bengalore</option>
+                     <option value="Mysore">Mysore</option>
+                     <option value="Tirupathi">Tirupathi</option>
+                     <option value="delhi">Delhi</option>
+
+                 </datalist>
+        </fieldset>
+        <br>
+        <button type="submit">Submit </button>
+        </form>
+        <script>
+            var setDefaultValues= function()
+            {
+               var date=new Date().toISOString;
+               console.log(date);
+               var todayValue=date.split("T")[0]
+               document.getElementById("todayDate").max=todayValue+10
+               console.log(todayValue.date())
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+#left
+{
+    background-color:bisque;
+    width:400px;
+    height:400px;
+    position:absolute;
+}
+
+#right
+{
+    background-color:hotpink;
+    width:400px;
+    height:400px;
+    float:right;
+    margin-right:15px;
+}

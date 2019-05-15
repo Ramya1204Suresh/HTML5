@@ -1,0 +1,31 @@
+button{
+    color:red;
+    background-color: bisque;
+    border-color: tomato;
+}
+#myform
+{
+    background-color: honeydew;
+
+}
+body
+{
+    background-color: beige;
+    font-weight: bolder;
+    color:tomato;
+}
+
+label{
+    font-family: 'Lucida Sans';
+    color:blue;
+    font-display: inherit;
+    font-style: oblique;
+}
+
+fieldset
+{
+    font-family: sans-serif;
+    font-optical-sizing: 50px;
+    font-weight: bolder;
+    color:green;
+}

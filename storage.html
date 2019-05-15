@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>HTML 5 Local Storage samples</title>
+        
+    </head>
+    <body onload="initiallizevalue()">
+        <h1>
+            Local Storage counter
+        </h1>
+        <button onclick="IncrementCounter()">Increase counter in LS</button>
+        <br><br>    
+        <div id=container><span style="color:red">Value of Counter in Local Storage</span>
+            
+        </div>
+        <script>
+            var curcounter = 0
+            var containerref=document.getElementById("container")
+            
+            var IncrementCounter=function()
+            {
+                curcounter++
+                localStorage.setItem("counter",curcounter)
+                containerref.innerHTML=localStorage.getItem("counter")
+                
+            }
+
+                var initiallizevalue=function()
+                {
+                    if(localStorage)
+                    {
+                    if(localStorage.counter==null)
+                    {
+                        localStorage.setItem("counter",0)
+                    }
+                    else
+                    {
+                        curcounter=localStorage.getItem("counter")
+                        containerref.innerHTML=localStorage.getItem("counter")
+                    }
+                    }
+                }
+            
+        </script>
+    </body>
+</html>

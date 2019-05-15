@@ -1,0 +1,107 @@
+header
+{
+    /*background-image: url("../artificial-intelligence.jpg");*/
+    background:linear-gradient(to right,rgba(255,0,0,1),rgba(255,255,0,0));
+    background-size: cover;
+    height:100vh;
+    
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+.highlight{
+    font-weight:bold;
+    color:gold;
+    transition: all 0.3s ease-in;
+}
+.logoconatiner
+{
+    width:235px;
+    border:3px solid hotpink;
+    background-color:goldenrod;
+    margin-top:0px;
+    margin-left:-5px;
+    padding:0px;
+    border-radius:15px;
+    position: absolute;
+
+}
+.logoimage
+{
+    margin-top:0px;
+    margin-left:0px; 
+    position: absolute;
+}
+
+.allmenu
+{
+    list-style:none;
+    float:right;
+}
+.eachitem
+{
+    color:whitesmoke;
+    font-family:'Lucida Sans';
+    font-family: Cambria;
+    font-size:30px;
+    cursor:pointer;
+    display:inline;
+    padding:10px;
+    transition: all 0.3s ease-in-out;
+}
+.messagecontainer
+{
+    font-size:40px;
+    position:absolute;
+    top:30%;
+    left:1%;
+    color:burlywood;
+}
+button
+{
+    font-size:50%;
+    background-color:salmon;
+    border: 4px solid lightsalmon;
+    border-radius:15px;
+    color:blue;
+    padding:10px;
+    margin-right:8px;
+    margin-top:10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.eachitem:hover{
+    color:goldenrod;
+    font-size:40px;
+    border:0px solid goldenrod ;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    font-size:60%;
+    background-color:azure;
+    border: 6px solid aquamarine;
+    border-radius:20px;
+    color:blue;
+    padding:5px;
+    margin-right:5px;
+    margin-top:9px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+   
+}
+.highlight:hover{
+    color:lightcoral;
+    transition: all 0.3s ease-in;
+    
+}
+.videobackground
+{
+position:fixed;
+min-width:100%;
+min-height:100%;
+width:auto;
+height:auto;
+z-index:-100;
+}

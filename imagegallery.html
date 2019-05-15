@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid goldenrod;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid orangered;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  text-decoration-color: bisque;
+  color:blueviolet
+}
+.btnremove
+{
+    display: none;
+}
+.btnhide
+{
+    visibility: hidden;
+}
+.btnhover
+{
+    transition: width 2s linear 1s;
+}
+.btnreset
+{
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div id="img1" class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <button id="btnremove" onclick=remove()>Remove</button>
+  <div class="desc">Life is Beautiful!!!!!!</div>
+</div>
+
+<div id="img2" class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <button id="btnhide" onclick=hide()>Hide</button>
+  <div class="desc">Overcome All Ur Hurdles in life!!!!</div>
+</div>
+
+<div id="img3" class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <button id="btnhover" onclick=hover()>Hover</button>
+  <div class="desc">Nothing is impossible in Life!!!</div>
+</div>
+
+<div id="img4" class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <button id="btnreset" onclick=reset()>Reset All</button>
+  <div class="desc">Self confidence bring back u as superpower!!!!!!!!</div>
+</div>
+<script>
+    var removeimage=document.getElementById("img1")
+    var remove=function()
+    {
+        removeimage.setAttribute("class","btnremove")
+    }
+    var removeimage1=document.getElementById("img2")
+    var hide=function()
+    {
+        removeimage1.setAttribute("class","btnhide")
+    }
+    var removeimage2=document.getElementById("img3")
+    var hover=function()
+    {
+        removeimage2.setAttribute("class","btnhover")
+    }
+    var removeimage3=document.getElementById("img4")
+    var reset=function()
+    {
+
+        removeimage.setAttribute("class","btnreset")
+        removeimage1.setAttribute("class","btnreset")
+        removeimage2.setAttribute("class","btnreset")
+        removeimage3.setAttribute("class","btnreset")
+    }
+</script>
+
+</body>
+</html>
